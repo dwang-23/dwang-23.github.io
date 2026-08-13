@@ -178,9 +178,16 @@ br {
   border-radius: 50%;
 }
 
+/* Research */
+#research {
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
 /* Education and Experience */
 #education {
-    animation: fadeInAnimation ease 4s;
+    animation: fadeInAnimation ease 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
