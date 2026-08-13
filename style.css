@@ -10,7 +10,7 @@ html {
   overflow: hidden;
   border-right: .15em solid black;
   white-space: nowrap;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   line-height: 1em;
   width: 0;
   animation: typing 2.5s forwards;
@@ -113,6 +113,15 @@ h1 {
   display: table;
 }
 
+p {
+  font-size: 1.2rem;
+}
+
+#research p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
 .heading::after {
   content: "";
   display: block;
@@ -185,12 +194,14 @@ br {
 @media (min-width: 1200px) {
   .job {
     line-height: 0;
+    margin-bottom: 2em;
   }
 }
 
 @media (max-width: 1200px) {
   .job {
     line-height: 0.75;
+    margin-bottom: 2em;
   }
 }
 
@@ -231,14 +242,15 @@ br {
 }
 
 
-/* Skills */
-#skills {
+/* Tags */
+#tags {
     animation: fadeInAnimation ease 5s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
 }
 
 .tag {
+  font-size: 1.0rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -246,62 +258,9 @@ br {
   word-wrap: break-word;
   border-radius: 10%;
   background: #d5ebf5;
-  margin: 1% 1% 1% 0;
-  padding: 1.5%;
+  margin: 0.5% 1% 0.5% 0;
+  padding: 0.8%;
   -webkit-hyphens: auto;
-}
-
-/* Projects */
-#projects {
-    animation: fadeInAnimation ease 6s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
-}
-
-@media (min-width: 767px) {
-  #project-grid {
-      display: grid;
-      grid-gap: 2vmax;
-      grid-template-columns: 30% 30% 30%;
-  }
-}
-
-@media (max-width: 767px) {
-  #project-grid {
-      display: grid;
-      grid-gap: 2vmax;
-      grid-template-columns: 45% 45%;
-  }
-}
-
-.project {
-    display: flex;
-    box-shadow: 0 0 5px 2px gray;
-    text-align: center;
-    align-items: center;
-    border-radius: 5%;
-    position: relative;
-}
-
-.project-link {
-    color: black;
-    text-decoration: none;
-}
-
-.project-title {
-    font-weight: bold;
-    margin: auto;
-}
-
-.project-description {
-    margin: 3%;
-}
-
-.project-image {
-    display: block;
-    max-width: 90%;
-    height: auto;
-    margin: 5% auto;
 }
 
 /* Footer */
